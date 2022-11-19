@@ -13,38 +13,38 @@
 </head>
 
 <body>
-    <div class="container-fluid border border-secondary container bg-light p-4 mt-5 " style="width:27%; border-radius: 20px;">
-        <h1 class="text-center text-dark">Calculator</h1> 
-        <div>
-            <input id="result" type="text" class="form-control">
+    <div class="col-lg-3 col-md-5 col-sm-6  container col-xs-8 border border-secondary p-3 mt-5" style="border-radius: 20px; background-color: rgb(30, 31, 70);">
+        <h1 class="text-center text-light">Calculator</h1> 
+        <div class="row " >
+            <div class="col-8 ms-3 "><input id="result" type="text" class="form-control mt-2"> </div>
+            <div id="btn" class="col-3"><button class="container btn btn-primary btn-lg" onclick="backspace()">&#9003;</button></div>
         </div>
-        <div class="container-fluid row mt-4 me-1 ms-2">
-            <div class="col-3"><button class="btn btn-outline-info" onclick="display(1)">1</button></div>
-            <div class="col-3"><button class="btn btn-outline-info" onclick="display(2)">2</button></div>
-            <div class="col-3"><button class="btn btn-outline-info" onclick="display(3)">3</button></div>
-            <div class="col-3"><button class="btn btn-secondary" onclick="display('/')">+</button></div>
+        <div class="row mt-4 ms-2 me-3">
+            <div id="btn" class="col"><button class="btn btn-outline-info" onclick="display(1)">1</button></div>
+            <div id="btn" class="col"><button class="btn btn-outline-info" onclick="display(2)">2</button></div>
+            <div id="btn" class="col"><button class="btn btn-outline-info" onclick="display(3)">3</button></div>
+            <div id="btn" class="col"><button class="container btn btn-secondary" onclick="display('/')">+</button></div>
         </div>
-        <div class="container-fluid row mt-2 me-1  ms-2">
-            <div class="col-3"><button class="btn btn-outline-info" onclick="display(4)">4</button></div>
-            <div class="col-3"><button class="btn btn-outline-info" onclick="display(5)">5</button></div>
-            <div class="col-3"><button class="btn btn-outline-info" onclick="display(6)">6</button></div>
-            <div class="col-3"><button class="btn btn-secondary" onclick="display('*')">-</button></div>
+        <div class="row mt-2 ms-2 me-3">
+            <div class="col"><button class="btn btn-outline-info" onclick="display(4)">4</button></div>
+            <div class="col"><button class="btn btn-outline-info" onclick="display(5)">5</button></div>
+            <div class="col"><button class="btn btn-outline-info" onclick="display(6)">6</button></div>
+            <div class="col"><button class="container  btn btn-secondary" onclick="display('*')">-</button></div>
         </div>
-        <div class="container-fluid row mt-2 me-1  ms-2">
-            <div class="col-3"><button class="btn btn-outline-info" onclick="display(7)">7</button></div>
-            <div class="col-3"><button class="btn btn-outline-info" onclick="display(8)">8</button></div>
-            <div class="col-3"><button class="btn btn-outline-info" onclick="display(9)">9</button></div>
-            <div class="col-3"><button class="btn btn-secondary" onclick="display('-')">*</button></div>
+        <div class="row mt-2  ms-2 me-3">
+            <div class="col"><button class="btn btn-outline-info" onclick="display(7)">7</button></div>
+            <div class="col"><button class="btn btn-outline-info" onclick="display(8)">8</button></div>
+            <div class="col"><button class="btn btn-outline-info" onclick="display(9)">9</button></div>
+            <div class="col"><button class="container btn btn-secondary " onclick="display('-')">*</button></div>
         </div>
-        <div class="container-fluid row mt-2 me-1  ms-2">
-            <div class="col-3"><button class=" btn btn-primary" onclick="backspace()">&#9003;</button></div>
-            <div class="col-3"><button class="btn btn-outline-info" onclick="display(0)">0</button></div>
-            <div class="col-3"><button class="btn btn-outline-info" onclick="display(9)">.</button></div>
-            <div class="col-3"><button class="btn btn-secondary" onclick="display('+')">/</button></div>
+        <div class="row mt-2 ms-2 me-3">
+            <div class="col"><button class="btn btn-primary " onclick="ac()">AC</button></div>
+            <div class="col"><button class="btn btn-outline-info " onclick="display(0)">0</button></div>
+            <div class="col"><button class="btn btn-outline-info " onclick="display(9)">.</button></div>
+            <div class="col"><button class="container btn btn-secondary " onclick="display('+')">/</button></div>
         </div>
-        <div class="container-fluid row mt-2 me-1  ms-2">
-            <div class="col-6"><button class="container btn btn-primary" onclick="ac()">AC</button></div>
-            <div class="col-5"><button class="container btn btn-outline-success" onclick="equal()">=</button></div>
+        <div class="row mb-4 me-2 mt-3">
+            <div class="col" ><button class="container-fluid btn btn-success" onclick="equal()">=</button></div>
         </div>
     </div>
 </body>
